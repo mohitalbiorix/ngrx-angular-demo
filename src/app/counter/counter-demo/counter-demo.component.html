@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">NGRx Example </h5>
+        <button id="increment" (click)="increment()" class="btn btn-primary ml">Increment</button>
+        <button id="decrement" (click)="decrement()" class="btn btn-danger ml">Decrement</button>
+        <button id="reset" (click)="reset()" class="btn btn-secondary ml">Reset Counter</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div>Current Count: {{ count$ | async }}</div>
+    </div>
+</div>
