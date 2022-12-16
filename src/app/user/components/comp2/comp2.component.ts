@@ -12,7 +12,10 @@ export class Comp2Component {
 
   constructor(private store: Store<UserState>) { }
 
-  addToStore(name: any, gender: any) {
+  name:string = '';
+  gender:string ='';
+
+  addToStore(name: string, gender: string) {
     if (name && gender) {
       this.store.dispatch(new UserActions.AddUser({
         name: name,
@@ -20,6 +23,8 @@ export class Comp2Component {
         id: Math.random().toString(16).slice(2)
       }))
     }
+    this.name ='';
+    this.gender='';
   }
 
 }

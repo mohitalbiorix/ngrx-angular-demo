@@ -1,7 +1,7 @@
 <div class="card m-top">
   <div class="card-body">
-    <input type="text" class="form-control" #name placeholder="Your Name">
-    <input type="text" class="form-control m-top" #gender placeholder="Gender">
-    <button type="button" class="btn btn-primary m-top" (click)="addToStore(name.value, gender.value)">Add User</button>
+    <input type="text" class="form-control"  [(ngModel)]="name" placeholder="Your Name">
+    <input type="text" class="form-control m-top"  [(ngModel)]="gender" placeholder="Gender">
+    <button type="button" class="btn btn-primary m-top" (click)="addToStore(name, gender)">Add User</button>
   </div>
 </div>

@@ -5,6 +5,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { Comp1Component } from './components/comp1/comp1.component';
 import { Comp2Component } from './components/comp2/comp2.component';
 import { Comp3Component } from './components/comp3/comp3.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Comp3Component } from './components/comp3/comp3.component';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    FormsModule
   ]
 })
 export class UserModule { }
