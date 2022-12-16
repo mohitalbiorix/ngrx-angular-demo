@@ -1,4 +1,4 @@
-import { Action, createReducer, on } from '@ngrx/store';
+import { createReducer, on } from '@ngrx/store';
 import * as CounterActions from '../actions/counter.actions';
 
 export const counterFeatureKey = 'counter';

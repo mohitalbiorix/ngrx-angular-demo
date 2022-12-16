@@ -1,0 +1,33 @@
+<div class="right" *ngIf="$user">
+  <section>
+    <h3>
+      NgRx Demo
+    </h3>
+    <table id="table">
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Gender
+        </th>
+        <th>
+          Actions
+        </th>
+      </tr>
+
+      <tr *ngFor="let d of $user | async; let i = index">
+        <td>
+          {{d.name}}
+        </td>
+        <td>
+          {{d.gender}}
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger" (click)="removeUser(i)">Delete User</button>
+        </td>
+      </tr>
+
+    </table>
+  </section>
+</div>
